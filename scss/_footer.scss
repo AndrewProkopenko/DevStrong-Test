@@ -1,0 +1,109 @@
+footer { 
+    .container-fluid { 
+        background: $dark;
+    }
+    color: $footer-text;
+
+    .footer-menu { 
+        justify-content: space-between;
+        padding-top: 70px;
+        padding-bottom: 50px;
+        &-item { 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_logo { 
+                padding-bottom: 60px;
+                .logo {
+                    a { 
+                        font-size: 50px;
+                        line-height: 50px;
+                        font-weight: 900; 
+                        transition: 300ms ease-in-out;
+                        color: inherit;
+                        &:hover { 
+                            text-decoration: none;
+                            color: #0086c0;
+                        }
+                    }
+                }
+                span { 
+                    display: inline-block;
+                    font-size: 13px;
+                    font-weight: 600;
+                    width: 80%;
+                }
+                
+            }
+            &_download { 
+                display: flex;
+                flex-direction: column;
+                a { 
+                    color: $primary;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    text-decoration: underline;
+                }
+
+            }
+            &_list { 
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: bold;
+                span { 
+                    display: inline-block;
+                    color:#fff;
+                    margin-bottom: 20px;
+                }
+                ul { 
+                    margin: 0;
+                    padding: 0;
+                    li { 
+                        list-style: none;
+                        margin-bottom: 10px;
+                        a { 
+                            color: inherit;
+                            transition: 300ms ease;
+                            span { 
+                                color: $primary;
+                            }
+                            &:hover  {
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+    }
+
+    .footer-down { 
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 50px;
+        padding-bottom: 40px;
+        border-top: 1px solid $footer-text;
+        .copy { 
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .social { 
+            ul { 
+                display: flex;
+                margin: 0;
+                padding: 0;
+                li { 
+                    margin-left: 50px;
+                    list-style: none;
+                    a:hover { 
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

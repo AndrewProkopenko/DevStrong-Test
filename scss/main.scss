@@ -1,0 +1,46 @@
+
+html, body { 
+    font-size: 14px;
+    font-weight: 400;
+}
+%bg-rad-left { 
+    background-image: -moz-linear-gradient( 180deg, rgb(1,135,193) 0%, rgb(58,192,239) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(1,135,193) 0%, rgb(58,192,239) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(1,135,193) 0%, rgb(58,192,239) 100%);
+}
+%bg-rad-right { 
+    background-image: -moz-linear-gradient( 180deg, rgb(2,198,84) 0%, rgb(0,164,235) 79%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(2,198,84) 0%, rgb(0,164,235) 79%);
+    background-image: -ms-linear-gradient( 180deg, rgb(2,198,84) 0%, rgb(0,164,235) 79%);
+}
+.pb-100 { 
+    padding-bottom: 100px;
+}
+
+  
+@import '../font/stylesheet.css';
+@import '../fontello/css/fontello.css';
+
+ 
+
+$primary:       #009be1 !default;
+$secondary:     #efefef !default;
+$success:       #00963f !default; 
+$warning:       #ffb400 !default; 
+$dark:          #1d1e1e !default;
+$footer-text:   #6d6d6d !default;
+
+$font-family-sans-serif: 'Panton'; 
+
+@import "_header" ;
+@import "_aside" ;
+@import "_main-block" ;
+@import "_swiper" ;
+@import "_section" ;
+@import "_news" ;
+@import "_pre-footer" ;
+@import "_footer" ;
+
+@import 'https://unpkg.com/swiper/css/swiper.min.css';
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
+
