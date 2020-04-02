@@ -10,8 +10,8 @@
             el: '.swiper-pagination',
         },
        
-    }
-    }); 
+    });
+    // }); 
     var swiper2 = new Swiper('.swiper-section', {
         loop: true,  
         spaceBetween: 30,
@@ -24,11 +24,12 @@
         }, 
         breakpoints: {
             0: { 
-                slidesPerView: 1
-            }
+                slidesPerView: 1,
+            },
             1024: {
               slidesPerView: 4,
               spaceBetween: 50,
+            }
         }
     }); 
     var swiper3 = new Swiper('.swiper-news', {
